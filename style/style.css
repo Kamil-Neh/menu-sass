@@ -7,14 +7,13 @@
 
 body {
   font-family: "Lato", sans-serif;
-  line-height: 1.5;
 }
 
-header {
+.header {
   background-color: #31a031;
 }
 
-header ul {
+.menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,11 +30,11 @@ header ul {
   list-style: none;
 }
 
-header li, header .menu {
-  padding: 15px 15px 15px 0px;
+.menu__item {
+  margin: 15px 15px 15px 0px;
 }
 
-header a {
+.menu__link {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   color: white;
@@ -44,16 +43,16 @@ header a {
   padding-left: 25px;
 }
 
-#menu__item__home, .button {
-  border: none;
-}
-
-a:hover {
+.menu__link:hover {
   color: yellow;
   text-shadow: 0px 0px 24px #42445a;
 }
 
-.menu__list {
+.menu__link--border-none {
+  border-left: none;
+}
+
+.menu__drop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,18 +68,18 @@ a:hover {
           flex-direction: column;
   display: none;
   position: absolute;
-  top: 70px;
-  padding-top: 5px;
+  top: 54px;
+  padding: 0px 0px 10px 0px;
   background-color: #31a031;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 18px 27px 0px #42445a;
+          box-shadow: 0px 18px 27px 0px #42445a;
 }
 
-.menu__list li {
-  padding-bottom: 20px;
+.menu__item-drop {
+  text-align: center;
 }
 
-.menu__list a {
+.menu__link-drop {
   border-left: none;
   display: block;
   position: relative;
@@ -89,12 +88,12 @@ a:hover {
   text-align: center;
 }
 
-.button {
-  background-color: #31a031;
-  padding: 10px 0px;
+.menu__submenu:hover .menu__drop {
+  display: block;
 }
 
-.menu:hover .menu__list {
-  display: block;
+button {
+  border: none;
+  background-color: #31a031;
 }
 /*# sourceMappingURL=style.css.map */

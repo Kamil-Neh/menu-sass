@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" id="menu__item__home">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <div class="menu">
-                    <button class="button"><a href="index.html">Products</a></button>
-                    <div class="menu__list">
-                        <li><a href="">Engineering</a></li>
-                        <li><a href="">Telecom</a></li>
-                        <li><a href="">Energy</a></li>
-                        <li><a href="">Finance</a></li>
-                        <li><a href="">Consultancy</a></li>
-                    </div>
-                </div>
-                <li><a href="index.html">Services</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="header__menu">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html" class="menu__link menu__link--border-none">Home</a></li>
+                    <li class="menu__item"><a href="index.html" class="menu__link">About</a></li>
+                        <div class="menu__submenu">   
+                            <button class="menu__item button">
+                                <a href="index.html" class="menu__link">Products</a></button>
+                                <div class="menu__list menu__drop">
+                                    <li class="menu__item menu__item-drop"><a href="index.html" class="menu__link menu__link-drop">Telecom</a></li>
+                                    <li class="menu__item menu__item-drop"><a href="index.html" class="menu__link menu__link-drop">Energy</a></li>
+                                    <li class="menu__item menu__item-drop"><a href="index.html" class="menu__link menu__link-drop">Finance</a></li>
+                                    <li class="menu__item menu__item-drop"><a href="index.html" class="menu__link menu__link-drop">Consultancy</a></li>
+                                    <li class="menu__item menu__item-drop"><a href="index.html" class="menu__link menu__link-drop">Engineering</a></li>
+                                </div>
+                        </div>
+                    <li class="menu__item"><a href="index.html" class="menu__link">Services</a></li>
+                    <li class="menu__item"><a href="index.html" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
 </body>
-
 </html>
